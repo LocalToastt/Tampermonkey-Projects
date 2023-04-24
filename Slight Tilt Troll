@@ -1,0 +1,17 @@
+// ==UserScript==
+// @name         Slight Tilt Troll
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  This will slighty tilt every element on Google Classroom.
+// @author       LocalToastt
+// @match        https://classroom.google.com/*
+// @icon         https://www.uctoday.com/wp-content/uploads/2019/06/GoogleDownInternetBroken.jpg
+// @grant        none
+// ==/UserScript==
+
+(function() {
+    'use strict';
+
+    javascript:(function(){['', '-ms-', '-webkit-', '-o-', '-moz-'].map(function(prefix){Array.prototype.slice.call(document.querySelectorAll('div,p,span,img,a,body')).map(function(el){el.style[prefix + 'transform'] = 'rotate(' + (Math.floor(Math.random() * 3) - 1) + 'deg)';});});}())})
+
+();
