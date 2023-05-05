@@ -1,1 +1,0 @@
-javascript:(function(){var all=document.getElementsByTagName("*");for(var i=0;i<all.length;i++){var style=all[i].style;if(style){style.transform="rotate(180deg)";style.webkitTransform="rotate(180deg)";style.mozTransform="rotate(180deg)";style.msTransform="rotate(180deg)";style.oTransform="rotate(180deg)";}}})();
